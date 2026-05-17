@@ -97,12 +97,12 @@ const FooterComponent = () => {
               </li>
 
               <li>
-                <a
-                  href="#"
-                  className="text-base text-gray-400 hover:text-white transition-colors duration-200"
-                >
-                  Guidelines
-                </a>
+               <Link
+                 to="/guidelines"
+                className="text-base text-gray-400 hover:text-white transition-colors duration-200"
+            >
+                Guidelines
+               </Link>
               </li>
             </ul>
           </div>

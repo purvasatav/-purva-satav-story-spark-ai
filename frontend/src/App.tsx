@@ -29,7 +29,7 @@ import PostListsComponent from "./components/dashboard/posts/post_lists.componen
 import ProfileComponent from "./components/dashboard/profile/profile.component";
 import TemplatesComponent from "./components/templates/templates.component";
 import CommunityComponent from "./components/community/community.component";
-
+import GuidelinesComponent from "./components/guidelines/guidelines.component";
 const ProtectedRoute = ({
   element,
   allowedRoles,
@@ -221,6 +221,14 @@ function App() {
             </RootLayout>
           }
         />
+        <Route
+        path="/guidelines"
+             element={
+              <RootLayout>
+            <GuidelinesComponent />
+            </RootLayout>
+         }
+  />
         <Route path="/post/:id" element={<PostDetailsComponent />} />
         <Route path="*" element={<NotFoundComponent />} />
       </Routes>
