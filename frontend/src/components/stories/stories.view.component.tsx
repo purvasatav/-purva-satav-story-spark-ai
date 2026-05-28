@@ -203,6 +203,7 @@ const StoriesViewComponent: React.FC<StoriesComponentProps> = ({
   const [isPlayingAudio, setIsPlayingAudio] = useState<boolean>(false);
   const [isPausedAudio, setIsPausedAudio] = useState<boolean>(false);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleTextToSpeech = () => {
     if (!selectedStory?.content) return;
 
@@ -252,6 +253,7 @@ const StoriesViewComponent: React.FC<StoriesComponentProps> = ({
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleStopAudio = () => {
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();

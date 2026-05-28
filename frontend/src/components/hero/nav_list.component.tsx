@@ -8,7 +8,7 @@ import { useNotifications } from "../../hooks/useNotifications";
 import ThemeToggle from "../theme/theme_toggle.component";
 
 const NavListComponent: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [menuOpen] = useState<boolean>(false);
   const navigate = useNavigate();
 
   const getLinkClass = (isActive: boolean) =>
@@ -23,6 +23,7 @@ const NavListComponent: React.FC = () => {
       : "text-slate-600 dark:text-slate-400 border-transparent hover:bg-slate-200/60 dark:hover:bg-white/5 hover:text-slate-900 dark:hover:text-white"
     }`;
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const renderNavContent = (label: string, isActive: boolean) => (
     <>
       {isActive && (
