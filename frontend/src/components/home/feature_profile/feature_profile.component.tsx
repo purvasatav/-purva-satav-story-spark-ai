@@ -104,6 +104,7 @@ const FeatureProfileComponent = () => {
             </p>
             <p className="text-sm text-gray-500">Following</p>
           </button>
+        
         </div>
       </div>
 
@@ -248,3 +249,4 @@ const FeatureProfileComponent = () => {
 };
 
 export default FeatureProfileComponent;
+
